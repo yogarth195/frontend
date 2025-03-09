@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply bg-white dark:bg-gray-900;
+}
+
+.menu-item {
+    @apply p-2 pr-5 dark:bg-black dark:text-white dark:hover:bg-white 
+           hover:dark:text-black text-black bg-white 
+           transition-colors
+           hover:bg-black hover:text-white cursor-pointer;
+  }
+  
+
+
