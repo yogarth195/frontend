@@ -14,6 +14,9 @@ html {
            transition-colors
            hover:bg-black hover:text-white cursor-pointer;
   }
-  
 
-
+@layer base {
+    input, textarea {
+        @apply text-black dark:text-white;
+    }
+}

@@ -11,7 +11,7 @@ const ImageSkeleton = () => {
   );
 };
 
-const WeddingPage = () => {
+const PreWeddingPage = () => {
   const [imageUrls, setImageUrls] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -20,7 +20,7 @@ const WeddingPage = () => {
 
     const fetchImages = async ()=> {
       try {
-        const response = await axios.get("https://backend-axvt.onrender.com/api/wedding");
+        const response = await axios.get("https://backend-axvt.onrender.com/api/prewedding");
         setImageUrls(response.data);
       } catch(err) {
         console.error("Error fetching images: ", err);
@@ -37,7 +37,7 @@ const WeddingPage = () => {
 
   return (
     <div className="w-full px-5 pb-5 dark:text-white">
-      <h2 className="text-3xl font-semibold text-center mb-6">Wedding Photography</h2>
+      <h2 className="text-3xl font-semibold text-center mb-6">Pre-Wedding Photography</h2>
 
       {loading ? (
         <ImageSkeleton />
@@ -58,7 +58,7 @@ const WeddingPage = () => {
         </div>
       )}
 
-      <div className="flex justify-center">This was Our Wedding Photography</div>
+      <div className="flex justify-center">These were our few Pre Wedding Photoshoots</div>
     </div>
   );
 };
@@ -66,4 +66,4 @@ const WeddingPage = () => {
 
 
 
-export default WeddingPage;
+export default PreWeddingPage;
