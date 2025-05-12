@@ -14,6 +14,7 @@ import PreWeddingPage from './pages/PreWeddingsPage';
 import { Calendar, Camera, Phone } from 'lucide-react';
 import AboutUs from './pages/AboutUsPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { HeroCarousel } from './components/HeroCarousel';
 
 const WeddingPage = lazy(()=> import("./pages/WeddingPage"))
 
@@ -43,6 +44,8 @@ function App() {
   return (
       <div className={`flex flex-col font-dmSerif transition-colors duration-300 bg-white dark:bg-black dark:text-white min-h-screen`}>
         <SideBar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+
+        <HeroCarousel/>
 
         <div className="pt-16">
           <Suspense fallback={<SkeletonPage />}>
