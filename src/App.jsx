@@ -45,13 +45,12 @@ function App() {
       <div className={`flex flex-col font-dmSerif transition-colors duration-300 bg-white dark:bg-black dark:text-white min-h-screen`}>
         <SideBar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
 
-        <HeroCarousel/>
-
         <div className="pt-16">
           <Suspense fallback={<SkeletonPage />}>
             <Routes>
               <Route path="/" element={
                 <>
+                  <HeroCarousel/>
                   <div className="flex justify-center text-2xl dark:text-white p-2">
                     Hello, Welcome to our website
                   </div>
