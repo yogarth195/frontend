@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import img1 from '../assets/images/IMG.jpg'
 import img2 from '../assets/images/img2.jpg'
 import img3 from '../assets/images/img3.jpg'
+const img4 =  'https://res.cloudinary.com/doeoriu04/image/upload/v1748238150/BNDR9229_lenxom.jpg'
 
 
-
-const images = [img1, img2, img3];
+const images = [img1, img2, img3, img4];
 
 export const HeroCarousel = () => {
   const [current, setCurrent] = useState(0);
@@ -33,7 +33,7 @@ export const HeroCarousel = () => {
       ))}
       <div className="absolute inset-0 bg-black/30 z-10" />
 
-      <div className='text-xl font-black'> carousel ends here </div>
+      {/* ADD SOMETHING HERE IF YOU WANT TO PUT IT IN THE CAROUSEL */}
     </div>
   );
 };

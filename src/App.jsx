@@ -50,9 +50,11 @@ function App() {
             <Routes>
               <Route path="/" element={
                 <>
+                <div className='-mt-16'>
                   <HeroCarousel/>
+                </div>
                   <div className="flex justify-center text-2xl dark:text-white p-2">
-                    Hello, Welcome to our website
+                     Welcome to Suraj Studios
                   </div>
 
                   <div className="max-w-4xl mx-auto text-center text-gray-700 dark:text-gray-300 px-4">
@@ -64,10 +66,7 @@ function App() {
                   </div>
 
                   <div className="flex flex-col gap-5 px-3 my-5">
-                    <div className="flex flex-row flex-wrap items-start gap-20 p-2 justify-center">
-                      <ImageContainer imageUrl={img1} />
-                      <ImageContainer imageUrl={img1} />
-                    </div>
+                    
 
                     <div className="text-center text-gray-800 dark:text-gray-200 text-lg mt-5">
                       Every picture tells a story, but only a few capture the soul.

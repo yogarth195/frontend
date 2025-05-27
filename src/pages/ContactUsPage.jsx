@@ -21,6 +21,23 @@ export const ContactUsPage = () => {
       <h1 className="text-2xl font-semibold mb-4 transition-opacity duration-500 opacity-100">
         Contact Us
       </h1>
+
+      {/* Quick Call Field */}
+      <div className="flex items-center space-x-2 mb-2 text-xl">
+        <Phone className="text-green-500" size={20} />
+        <a 
+          href="tel:+918076456925" 
+          className="text-green-600 hover:underline font-medium"
+        >
+          +91 80764-56925
+        </a>
+      </div>
+
+      {/* Call Message */}
+      <p className="text-center text-lg font-medium mb-4">
+        Call now or request a call by leaving us a message
+      </p>
+
       <form className="w-full max-w-md bg-white dark:bg-gray-900 p-4 rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02]">
         
         {/* Name Field */}

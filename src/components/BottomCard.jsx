@@ -5,7 +5,8 @@ export const BottomCard = () => {
     <div className="mt-auto">
       <Socials />
       <footer className="bg-black text-white py-12 px-10 w-full mt-auto border-white dark:border-t">
-        Something
+        @2025 SurajStudios
+        
       </footer>
     </div>
   );
