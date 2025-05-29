@@ -1,0 +1,19 @@
+.scrolling-wrapper {
+  display: flex;
+  animation: scroll 100s linear infinite;
+  width: max-content;
+}
+.paused {
+  animation-play-state: paused !important;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+

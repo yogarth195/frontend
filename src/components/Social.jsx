@@ -3,7 +3,7 @@ import { FaInstagram, FaYoutube, FaFacebook, FaMapMarkerAlt, FaEllipsisH, FaWhat
 export const Socials = () => {
   return (
     <div className="px-2 py-6">
-      <div className="text-center text-lg mb-4 font-medium">Follow Us</div>
+      {/* <div className="text-center text-lg mb-4 font-medium">Follow Us</div> */}
       <ul className="flex justify-center space-x-6 text-base">
         <li>
           <a
@@ -65,7 +65,7 @@ export const Socials = () => {
             <span className="sr-only">Google Maps</span>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             href="#"
             title="More"
@@ -75,7 +75,7 @@ export const Socials = () => {
             <FaEllipsisH size={24} aria-hidden="true" />
             <span className="sr-only">More</span>
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

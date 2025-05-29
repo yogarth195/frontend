@@ -30,26 +30,19 @@ const ImageWithLoader = ({ src, alt }) => {
   );
 };
 
-const WeddingPage = () => {
+const ChildPhotography = () => {
   const imageUrls = [
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748238150/BNDR9229_lenxom.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239062/1_obsmlr.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239062/c3_wsa8re.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239059/img3_gjcew2.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239059/img2_jttqsy.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239058/g..Back_33_zxgwwg.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239059/IMG_ferrpd.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239057/BNDR8241_g4kfld.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239058/BNDR7940_sa8jo1.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239056/BNDR2668_fruxoy.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239056/4X2A7189_m9varo.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239054/_A3A9756_copy_rai8u0.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239056/4X2A6538_uath8a.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239058/BNDR9917_wnze0k.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239057/BNDR9229_gyceqk.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239057/BNDR0238_ycffna.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239054/4X2A6547_j3pmcb.jpg",
-    "https://res.cloudinary.com/doeoriu04/image/upload/v1748239052/_A3A0187_copy_2_dqwqqd.jpg"
+    "https://res.cloudinary.com/doeoriu04/image/upload/v1748522492/210620284_115379020794629_4591680789343742151_n_rycklx.jpg",
+    "https://res.cloudinary.com/doeoriu04/image/upload/v1748522491/205248818_110127697986428_7556640624950873817_n_sgjl3p.jpg",
+    "https://res.cloudinary.com/doeoriu04/image/upload/v1748522491/206212116_112008084465056_6607622332313033170_n_ejgztx.jpg",
+    "https://res.cloudinary.com/doeoriu04/image/upload/v1748522467/06_fkznjc.jpg",
+    "https://res.cloudinary.com/doeoriu04/image/upload/v1748522464/04_fpls9d.jpg",
+    "https://res.cloudinary.com/doeoriu04/image/upload/v1748522485/203655667_107956281536903_3101804356825818563_n_ma0rjw.jpg",
+    "https://res.cloudinary.com/doeoriu04/image/upload/v1748522481/15_lnrmrh.jpg",
+    "https://res.cloudinary.com/doeoriu04/image/upload/v1748522481/02_gmibtv.jpg",
+    "https://res.cloudinary.com/doeoriu04/image/upload/v1748522475/16_ygzylk.jpg",
+    "https://res.cloudinary.com/doeoriu04/image/upload/v1748522476/201111498_106506895015175_2692842754143953719_n_k451nj.jpg",
+    "https://res.cloudinary.com/doeoriu04/image/upload/v1748522465/_A3A5124_kpfruc.jpg",
   ];
 
   const [loading, setLoading] = useState(false);
@@ -57,7 +50,7 @@ const WeddingPage = () => {
 
   return (
     <div className="w-full px-5 pb-5 dark:text-white">
-      <h2 className="text-3xl font-semibold text-center mb-6">Wedding Photography</h2>
+      <h2 className="text-3xl font-semibold text-center mb-6">Child Photography</h2>
 
       {loading ? (
         <ImageSkeleton />
@@ -84,15 +77,15 @@ const WeddingPage = () => {
           href="/contact"
           className="inline-block text-white bg-black dark:bg-white dark:text-black px-6 py-2 rounded-full font-semibold transition hover:scale-105"
         >
-          Book Your Wedding Shoot
+          Book Your Child's Photo Session Today ! 
         </a>
 
         <div>
           <a
-            href="/prewedding"
+            href="/wedding"
             className="text-sm text-gray-600 dark:text-gray-400 underline hover:text-black dark:hover:text-white transition"
           >
-            Explore Pre Wedding Photography
+            Explore Wedding Photography
           </a>
         </div>
       </div>
@@ -100,4 +93,4 @@ const WeddingPage = () => {
   );
 };
 
-export default WeddingPage;
+export default ChildPhotography;
